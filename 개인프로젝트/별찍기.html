@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 하나씩 늘려나가는 별찍기
+        for(i=0; i<5; i++)
+        {
+            console.log("*".repeat(i+1));
+        }
+        */
+       /* 하나씩 줄이는 별찍기
+        for(i=5; i>0; i--)
+        {
+            console.log("*".repeat(i));
+        }
+        */
+       /* 밑으로 갈수록 2배씩 되는 별찍기
+        for(i=1; i<=8; i=2*i)
+        {
+            console.log("*".repeat(i));
+        }
+        */
+       /*
+        for(i=1; i<=4; i++)
+        {
+            console.log(" ".repeat(4-i)+"*".repeat(i));
+        }
+        */
+       /*
+        for(i=1; i<=8; i+=2)
+        {
+            console.log(" ".repeat((8-i)/2)+"*".repeat(i));
+        }
+        */
+       /*
+        for(i=-4; i<=5; i+=2)
+        {
+            console.log(" ".repeat((Math.abs(i)/2))+"*".repeat(5-Math.abs(i)));
+        }
+        */
+        for(i=0; i<5; i++)
+        {
+            document.write(("*").repeat(i+1)+"<br>");
+            
+        }
+    </script>
+</body>
+</html>

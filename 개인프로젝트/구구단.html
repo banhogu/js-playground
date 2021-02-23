@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        while (true) {
+            var 숫자1 = Math.floor(Math.random() * 9 + 1);
+            var 숫자2 = Math.floor(Math.random() * 9 + 1);
+            var 결과 = 숫자1 * 숫자2;
+            var 상태 = true;
+            while (상태) {
+                var 답 = prompt(String(숫자1) + " 곱하기 " + String(숫자2) + " = ? ")
+                if (결과 === Number(답)) {
+                    alert("정답입니다");
+                    상태 = false;
+                }
+                else {
+                    alert("오답입니다");               
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
